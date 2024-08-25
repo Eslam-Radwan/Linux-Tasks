@@ -1,0 +1,2 @@
+cut -d ',' -f 2 info.csv | sort | uniq > emails.txt
+ps -e --sort=cmd | tr -s ' ' | cut -d ' ' -f 2,5 > processes.txt
